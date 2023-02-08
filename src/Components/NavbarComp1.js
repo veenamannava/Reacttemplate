@@ -17,8 +17,11 @@ import Blog from './Blog';
 import Blog1 from './Blog1';
 import Blog2 from './Blog2';
 import { Redirect } from 'react-router';
-import PageNotFound from './page'
+import PageNotFound from './page';
+import Scrollspy from 'react-scrollspy'
 export default function NavbarComp1() {
+    
+    
   const [stickyClass, setStickyClass] = useState('');
 
   useEffect(() => {
@@ -30,19 +33,22 @@ export default function NavbarComp1() {
     if (window !== undefined) {
       let windowHeight = window.scrollY;
       // window height changed for the demo
-      windowHeight > 150 ? setStickyClass('sticky-nav') : setStickyClass('');
+      windowHeight > 150? setStickyClass('sticky-nav') : setStickyClass('');
     }
   };
 
   // return <div className={`navbar ${stickyClass}`}>Navbar</div>;
   return (
     <Router>
+        
+        
         <div className={`navbar1 ${stickyClass}`}>
 
             <Navbar bg="dark" variant={"dark"} expand="lg">
                 <Navbar.Brand href="#">Navbar</Navbar.Brand>
                 <Navbar.Toggle aria-controls="navbarScroll" />
                 <Navbar.Collapse id="navbarScroll">
+                
                     <Nav
                         className="mr-auto my-2 my-lg-0" 
                         style={{ maxHeight: '100px' }}
@@ -59,9 +65,11 @@ export default function NavbarComp1() {
                         <Nav.Link as={Link} to="/contact">Contact</Nav.Link>
 
                     </Nav>
+                    
 
                 </Navbar.Collapse>
             </Navbar>
+          
         </div>
         <div>
             <Switch>
@@ -117,6 +125,8 @@ export default function NavbarComp1() {
                 
             </Switch>
         </div>
+        
+       
     </Router>
 )
 }

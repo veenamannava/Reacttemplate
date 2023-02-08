@@ -29,7 +29,7 @@ body {
 
 
 .wraper {
-    width: 1260px;
+    width: 100%;
 }
 
 .logo {
@@ -79,8 +79,6 @@ body {
     justify-content: center;
     align-items: center;
     margin: auto;
-    width: 1100px;
-    height: 550px;
 }
 
 /* ----- end of container stylings ----- */
@@ -351,6 +349,14 @@ body {
     height: 100%;
     padding: 130px;
 }
+.sec5-left-bg {
+    background: #d41e5b;
+    color: #fff;
+    height: 100%;
+    padding: 130px;
+    /* padding-bottom: 90px; */
+}
+
 .sec1-right-bg{
     background: #181818;
     color: #fff;
@@ -393,15 +399,7 @@ body {
     top:35%
 }
 
-wwd1 h1 h2 {
-    text-align: center;
-    font-size: 70px;
-    margin-top: -10px;
 
-
-
-
-}
 
 
 /* Create four equal columns that floats next to each other */
@@ -459,15 +457,7 @@ wwd1 h1 h2 {
     text-transform: uppercase;
 }
 
-wwd2 h1 h2 {
-    text-align: center;
-    font-size: 70px;
-    margin-top: -10px;
 
-
-
-
-}
 
 .itembox2 {
     background: #181818;
@@ -508,15 +498,6 @@ wwd2 h1 h2 {
     text-transform: uppercase;
 }
 
-wwd3 h1 h2 {
-    text-align: center;
-    font-size: 70px;
-    margin-top: -10px;
-
-
-
-
-}
 
 .wwd5 {
     width: 400px;
@@ -631,7 +612,9 @@ footer{
     /* color: rgb(85, 83, 83); */
     height: 100%;
     padding: 130px;
-    color: white;text-align: center;
+    color: white;
+    text-align: center;
+
 }
  .text{
     text-align: center;
@@ -644,14 +627,19 @@ footer{
     height: 100%;
     padding: 130px;
     color: white;text-align: center;
+
 }
 .sec4-left-bg {
     background: #505cc1;
     /* color: rgb(85, 83, 83); */
     height: 100%;
-    padding: 130px;
-    color: white;text-align: center;
+    padding-top: 250px;
+    
+    text-align: center;
+    color:white;
 }
+    
+
 .v1{
     align-items:center;
 padding-left:40px;
@@ -802,31 +790,53 @@ color:rgb(238, 195, 195);
 	width: 70%;
 	 
   }
-  @media screen and (max-width:425px) {
+  @media (max-width:425px) {
     .sec1-left-bg{padding: 10px;text-align:center;}
-    .sec4-left-bg{padding: 10px;text-align:center;}
-    .sec2-left-bg{padding:10px;}
+    .sec4-left-bg{padding-top: 400px;text-align:center;}
+    .sec2-left-bg{padding:10px;text-align:center;}
     .sec3-left-bg{padding:10px;text-align:center;}
+    .sec5-left-bg{padding-top: 400px;text-align:center;} 
   }
-  @media screen and (max-width:1125px) {
-  .sec4-left-bg{padding: 100px;text-align:center;}
+
+  @media (max-width:1125px) {
+  .sec4-left-bg{padding-top:350px;text-align:center;}
   .sec1-left-bg{padding: 85px;text-align:center;}
   .sec2-left-bg{padding:105px;text-align:center;}
+  .sec5-left-bg{padding-top: 365px; text-align:center;}
   }
-  @media screen and (min-width:280px) {
+  @media (max-width:915px) and (min-width:280px){
+    .sec4-left-bg{padding:10px;text-align:center;}
+        .sec5-left-bg{padding:10px;text-align:center;}
+        .sec1-left-bg{padding:10px;text-align:center;}
+        .sec2-left-bg{padding:10px;text-align:center;}
+        .sec3-left-bg{padding:10px;text-align:center;}
+       
     
   }
-  @media screen and (min-width:912px) {
+  @media (max-width:1368px)  {
+    .text h1 h2{
+        text-align: center;
+    
+    }
+    .sec5-left-bg{text-align:center;}
+    
     
   }
-  @media screen and (max-width:768px) {
+  @media(max-width: 1180px) and (min-width:768px){ 
     
-    .sec3-left-bg{text-align:center;padding: 100px;}
-    .sec2-left-bg{padding:60px;text-align:center;}
+    .sec3-left-bg{text-align:center;padding-top: 160px;}
+    .sec1-left-bg{text-align:center;padding-top: 100px;}
+    .sec2-left-bg{padding-top:100px;text-align:center;}
+    .sec5-left-bg {
+        padding-top:370px;text-align:center;}
+        .sec4-left-bg {
+            padding-top:322px;text-align:center;}
+    }
+  
     
     .cntbx p {
         font-size: 15px;}
-  }
+  
   
   .vv2{
     padding-top:30px;
@@ -856,6 +866,7 @@ color:rgb(238, 195, 195);
     } */
     .bg-dark {
         background-color: #aaa!important;
+        /* padding-top:12px; */
     }
     .navbar1 {
         position:relative;
@@ -873,3 +884,19 @@ color:rgb(238, 195, 195);
         top: 0;
         left: 0;
       }
+       @media (max-width:280px)  {
+        .cntbx p{
+            line-height: 14px;
+    font-size: 14px;
+    text-align: center;
+
+        }
+       }
+       @media (min-width:1024px){
+        .sec5-left-bg{
+            padding:144px;
+        }
+       }
+       
+    
+    

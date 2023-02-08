@@ -7,7 +7,7 @@ export default class Solutions extends Component {
           
             <div className="row p-0">
             <div className="col-md-4 p-0 col-sm-4 col-lg-4 col-xs-4">
-               <div className="sec1-left-bg">
+               <div className="sec5-left-bg">
                <div className="text">
                   <h1 className="text-center">What <br/>
                      We
